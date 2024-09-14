@@ -4,6 +4,8 @@ const dotenv = require('dotenv')
 dotenv.config({path:'./.env'})
 const web = require('./routes/web')
 const connectDb=require('./db/connectDb')
+connectDb()
+
 const fileUpload = require("express-fileupload");
 
 //temp file uploader
@@ -13,7 +15,7 @@ app.use(fileUpload({useTempFiles: true}));
 const cors= require('cors')
 app.use(cors())
 
-connectDb()
+
 
 
 //for dataget in api
