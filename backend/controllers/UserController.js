@@ -101,7 +101,7 @@
 // module.exports =UserController
 
 
-const UserModel = require('../models/user')
+const UserModel = require('../models/users')
 
 
 class UserController {
