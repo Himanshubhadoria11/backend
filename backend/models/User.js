@@ -13,6 +13,7 @@ const UserSchema = new mongoose.Schema(
         }
 }, { timestamps: true })
 
+
 //create collection
 const UserModel = mongoose.model('users', UserSchema)
 module.exports = UserModel
