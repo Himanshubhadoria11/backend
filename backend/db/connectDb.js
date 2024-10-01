@@ -3,7 +3,7 @@ const mongoose =require('mongoose')
 
 const connectDb=()=>{
     //For local Db
-    return mongoose.connect(process.env.LIVE_URL)
+    return mongoose.connect(process.env.LOCAL_URL)
 
     //For cloud Db
     //return mongoose.connect(database)
